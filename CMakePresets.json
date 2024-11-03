@@ -18,15 +18,21 @@
             "name": "arm-none-eabi-debug",
             "inherits": "default",
             "description": "Debug build for Gateway using GNU ARM compiler",
-            "binaryDir": "${sourceDir}/build/arm-none-eabi-debug",
-            "toolchainFile": "${sourceDir}/cmake/arm-none-eabi.cmake"
+            "binaryDir": "${sourceDir}/build/debug",
+            "toolchainFile": "${sourceDir}/cmake/arm-none-eabi.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
         },
         {
             "name": "arm-none-eabi-release",
             "inherits": "default",
             "description": "Release build for Gateway using GNU ARM compiler",
-            "binaryDir": "${sourceDir}/build/arm-none-eabi-release",
-            "toolchainFile": "${sourceDir}/cmake/arm-none-eabi.cmake"
+            "binaryDir": "${sourceDir}/build/release",
+            "toolchainFile": "${sourceDir}/cmake/arm-none-eabi.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
         }
     ]
 }

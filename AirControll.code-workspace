@@ -4,5 +4,12 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"*.php": "php",
+			"*.html": "html",
+			"uart.h": "c",
+			"common.h": "c"
+		}
+	}
 }

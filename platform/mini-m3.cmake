@@ -1,7 +1,7 @@
 
 
 set (PLATFORM_NAME mini-m3)
-set (PLATFORM_CPU cortex-m0)
+set (PLATFORM_CPU cortex-m3)
 set (PLATFORM_STARTUP ${CMAKE_CURRENT_LIST_DIR}/${PLATFORM_NAME})
 set (LINKER_SCRIPT ${PLATFORM_STARTUP}/ld/stm32f031x6.ld)
 
@@ -19,3 +19,5 @@ message(STATUS "USER PLATFORM ${PLATFORM_STARTUP}" )
 link_directories(
     ${PLATFORM_STARTUP}
 )
+
+
